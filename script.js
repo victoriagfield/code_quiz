@@ -143,5 +143,4 @@ function submitInfo(){
   linebreak = document.createElement("br");
   results.append(linebreak);
   localStorage.setItem(score, myTextArea.value);
-
 }
