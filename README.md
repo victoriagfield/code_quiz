@@ -20,3 +20,5 @@ WHEN the game is over
 THEN I can save my initials and score
 
 ### Example Image:
+![codequiz](https://user-images.githubusercontent.com/66035385/88111989-f67d2000-cb7c-11ea-8f5b-d0839e51a7b3.jpg)
+
