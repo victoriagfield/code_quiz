@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cairo&family=Modak&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <!--Code Quiz words at the top of the page-->
+    <h1>Code Quiz</h1>
+
+    <!--section that holds the questions and choices-->
+    <section id="container" class="container">
+
+    <!--Where the question text is held-->
+    <div id="questionContainer" class="hide">
+        <div id="questionEL" class="questionEL"> </div>
+
+    <!--Where the option(choice) are held. Radio button used instead of regular button-->
+        <label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+        <label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+        <label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+        <label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+<!--Extra break between the choices and the countdown -->
+     <br>
+
+    <!--Visual timer countdown-->
+     <p id= "timer">60</p>
+
+     <!--Timer button to start timer for the whole game-->
+        <button id="timerButton" class="timerButton">Click here to begin the timer</button>
+
+    <!--Next question button-->
+        <button id="nextBtn" class="nextButton" onclick="nextQuestion();">Next Question</button>
+    </div>
+
+    <!--Should be the results but right now does nothing-->
+        <div id="result" class="container result" style="display: none">
+            <h3 id="theH3" style="display: none">Highscores</h3>
+            <h4 id= "theH4" style="display: none">Enter your name to submit your score.</h4>
+           <label id="resultsText" style="display: none"></label>
+           <textarea id="myTextArea" rows="1" cols="40" style="display: none"></textarea>
+           <button id="submitName" class="submitName" style="display: none">Submit</button>
+           <p id="highscores"></p>
+        </div>
+
+      </div>
+    </section>
+
+
+<!--script for JavaScript-->
+    <script src="script.js"></script>
+    
+</body>
+</html>
