@@ -70,7 +70,6 @@ var totalQuestion = quizQuestions.length;
 var countDown = 60;
 
 function quizFinish() {
-
   document.getElementById("questionContainer").style.display = "none";
   document.getElementById("result").style.display = "block";
   document.getElementById("theH3").style.display = "block";
@@ -131,12 +130,7 @@ function nextQuestion() {
   questionCount++;
   if (questionCount >= totalQuestion) {
     console.log(score * 10);
-    nextBTN.textContent = "Finish";
-
-    nextBTN.addEventListener("click", function () {
-      quizFinish();
-    })
-
+    quizFinish();
   }
   loadQuestion(questionCount);
 }
@@ -144,6 +138,8 @@ loadQuestion(questionCount);
 
 function submitInfo(){
   results.append(myTextArea.value);
+  linebreak = document.createElement("br");
+  results.append(linebreak);
   localStorage.setItem(score, myTextArea.value);
 
 }
