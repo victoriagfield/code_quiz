@@ -143,7 +143,8 @@ function nextQuestion() {
 loadQuestion(questionCount);
 
 function submitInfo(){
-  results.append( myTextArea.value + score.value);
+  results.append( myTextArea.value);
+  localStorage.setItem(myTextArea.value);
 
 }
 // submitInfo();
